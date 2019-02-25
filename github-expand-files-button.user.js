@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub expand files button
 // @namespace    https://puac.de/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Adds a button to expand all files in a GitHub pull request or commit view.
 // @author       Hans Puac
 // @match        https://github.com/*/pull/*/files
@@ -28,7 +28,7 @@
         expandButton.setAttribute('disabled', true);
 
         var expand = function () {
-            var anchors = document.querySelectorAll('.diff-expander.js-expand');
+            var anchors = document.querySelectorAll('.js-expand');
             var len = anchors.length;
             if (len < 1) {
                 expandButton.innerText = 'All Files expanded';
