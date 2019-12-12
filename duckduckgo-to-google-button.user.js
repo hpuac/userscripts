@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DuckDuckGo to Google Button
 // @namespace    https://puac.de/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Displays a button on DuckDuckGo that redirects to the same search on Google.
 // @author       Hans Puac
 // @match        https://duckduckgo.com/*
@@ -36,7 +36,7 @@
 
         url += encodeURI(searchInput);
 
-        if (match.length > 0) {
+        if (match && match.length > 0) {
             var searchType = match[1];
             if (typeof searchTypeMap[searchType] !== 'undefined') {
                 url += '&tbm=' + searchTypeMap[searchType];
