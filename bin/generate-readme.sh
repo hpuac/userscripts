@@ -2,8 +2,8 @@
 [[ -v VERBOSE ]] && set -x
 set -eu
 
-pad_script=50
-pad_name=40
+pad_script=37
+pad_name=27
 pad_version=7
 
 pad() {
@@ -34,7 +34,7 @@ for filename in ./*.js; do
     versionLine="$(grep "// @version " "$filename")"
     version=$(echo "${versionLine:11}"| xargs)
 
-    echo "| $(pad "$pad_script" "$script_name") | $(pad "$pad_name" "$name") | $(pad "$pad_version" "$version") | $description |"
+    echo "| $(pad "$pad_script" "[$script_name]") | $(pad "$pad_name" "$name") | $(pad "$pad_version" "$version") | $description |"
 done
 
 cat << "EOF"
@@ -44,4 +44,11 @@ cat << "EOF"
 This readme file is auto generated. Run the following command to regenerate it:
 
 `./bin/generate-readme.sh > README.md`
+
 EOF
+
+for filename in ./*.js; do
+    script_name="${filename:2}"
+
+    echo "[$script_name]: $filename"
+done
