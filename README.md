@@ -6,7 +6,7 @@ A collection of userscripts that I am using. Feel free to use, share or contribu
 
 | Script                                | Name                        | Version | Description |
 |---|---|---|---|
-| [amazon-short-url.user.js]            | Amazon short url            | 0.2.ß  | Replaces the current Amazon product URL in the address bar with a shorter version. |
+| [amazon-short-url.user.js]            | Amazon short url            | 0.2.0   | Replaces the current Amazon product URL in the address bar with a shorter version. |
 | [duckduckgo-to-google-button.user.js] | DuckDuckGo to Google Button | 0.1.1   | Displays a button on DuckDuckGo that redirects to the same search on Google. |
 | [github-expand-files-button.user.js]  | GitHub expand files button  | 0.1.1   | Adds a button to expand all files in a GitHub pull request or commit view. |
 

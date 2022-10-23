@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amazon short url
 // @namespace    https://puac.de/
-// @version      0.2.ß
+// @version      0.2.0
 // @description  Replaces the current Amazon product URL in the address bar with a shorter version.
 // @author       Hans Puac
 // @match        https://www.amazon.ae/*
