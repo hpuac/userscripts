@@ -3,7 +3,7 @@
 set -eu
 
 pad_script=37
-pad_name=27
+pad_name=37
 pad_version=7
 
 pad() {
